@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+Печать на футболках — конструктор
+  /* Включите базовые токены Nexus здесь (styles.css) или импортируйте файл позже */  
+Печать на футболках
+🌗
+Выбор футболки
+    <div class="card">
+      <div class="thumb" style="background:#fff; height:120px;"></div>
+      <div class="body">
+        <strong>Мужская</strong><br/>
+        Размеры: XS-XXL
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#f2f2f2; height:120px;"></div>
+      <div class="body">
+        <strong>Женская</strong><br/>
+        Размеры: XS-XL
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#fafafa; height:120px;"></div>
+      <div class="body">
+        <strong>Детская</strong><br/>
+        Размеры: 4-14 лет
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <label>Цвет футболки</label>
+    <select aria-label="Выберите цвет">
+      <option>Белый</option>
+      <option>Красный</option>
+      <option>Жёлтый</option>
+      <option>Синий</option>
+      <option>Черный</option>
+      <option>Бирюзовый</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label>Размер</label>
+    <select aria-label="Выберите размер">
+      <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <label>Место печати</label>
+    <select aria-label="Выберите место печати">
+      <option>Грудь</option>
+      <option>Спина</option>
+      <option>Рукава</option>
+    </select>
+  </div>
+</section>
+
+<!-- 2. Редактор нанесения -->
+<section id="editor" class="section editor">
+  <h2>Редактор нанесения</h2>
+  <div class="editor-area">
+    <div class="tshirt-sim">
+      <div class="shirt-area" aria-label="Область футболки для нанесения"></div>
+    </div>
+    <div class="controls">
+      <label>Текст</label>
+      <input type="text" placeholder="Введите надпись" />
+      <label>Размер шрифта</label>
+      <input type="range" min="12" max="56" value="24" />
+      <label>Цвет текста</label>
+      <input type="color" value="#000000" />
+      <label>Загрузить изображение</label>
+      <input type="file" accept="image/*" />
+    </div>
+  </div>
+</section>
+
+<!-- 3. Расчёт цены и кнопка "Заказать" -->
+<section id="pricing" class="section pricing">
+  <h2>Расчёт цены</h2>
+  <p>Цена зависит от типа футболки, цвета и размещения нанесения.</p>
+  <div class="price-block">
+    <div>Стоимость одной футболки: <strong>от 890 ₽</strong></div>
+    <div>Итого: <strong id="total">≈ 890 ₽</strong></div>
+  </div>
+  <button class="btn btn-primary" aria-label="Заказать сейчас">Заказать</button>
+</section>
+
+<!-- Галерея работ (5 примеров) -->
+<section id="gallery" class="section gallery">
+  <h2>Примеры работ</h2>
+  <div class="grid gallery-grid">
+    <!-- повторите 5 карточек -->
+    <div class="card">
+      <div class="thumb" style="background:#eee; height:120px"></div>
+      <div class="body">Пример нанесения 1</div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#eee; height:120px"></div>
+      <div class="body">Пример нанесения 2</div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#eee; height:120px"></div>
+      <div class="body">Пример нанесения 3</div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#eee; height:120px"></div>
+      <div class="body">Пример нанесения 4</div>
+    </div>
+    <div class="card">
+      <div class="thumb" style="background:#eee; height:120px"></div>
+      <div class="body">Пример нанесения 5</div>
+    </div>
+  </div>
+</section>
+
+<!-- Отзывы (5 шт) -->
+<section id="reviews" class="section reviews">
+  <h2>Отзывы клиентов</h2>
+  <div class="grid reviews-grid">
+    <div class="card review">
+      <div class="body">"Качество на высоте. Быстро сделали заказ."</div>
+      <div class="footer">Иван, Москва</div>
+    </div>
+    <div class="card review">
+      <div class="body">"Хороший сервис и точное соответствие макету."</div>
+      <div class="footer">Мария, Санкт-Петербург</div>
+    </div>
+    <div class="card review">
+      <div class="body">"Дизайн точь-в-точь как мне хотелось."</div>
+      <div class="footer">Андрей, Новосибирск</div>
+    </div>
+    <div class="card review">
+      <div class="body">"Отличная цена за качество."</div>
+      <div class="footer">Елена, Казань</div>
+    </div>
+    <div class="card review">
+      <div class="body">"Рекомендую всем, кто делает мерч."</div>
+      <div class="footer">Денис, Нижний Новгород</div>
+    </div>
+  </div>
+</section>
+  <p>© 2026 Типография. Все реквизиты и политика на сайте.</p>
+</div>
